@@ -26,6 +26,8 @@ services:
     build:
       context: ./nextjs-site-two
       dockerfile: Dockerfile
+    env_file:
+      - ./nextjs-site-two/.env
     restart: unless-stopped
     volumes:
       - database_volume:/app/prisma
