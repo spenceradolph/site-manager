@@ -27,5 +27,10 @@ services:
       context: ./nextjs-site-two
       dockerfile: Dockerfile
     restart: unless-stopped
+    volumes:
+      - database_volume:/app/prisma
     ports:
       - "3002:3000"
+
+volumes:
+  database_volume:

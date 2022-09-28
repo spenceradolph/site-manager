@@ -1,0 +1,8 @@
+{
+  "name": "site-manager",
+  "private": true,
+  "scripts": {
+    "compose-up": "docker-compose up",
+    "compose-build": "docker-compose build"
+  }
+}
