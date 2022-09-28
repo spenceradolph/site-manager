@@ -1,0 +1,6 @@
+[submodule "nextjs-site-one"]
+	path = nextjs-site-one
+	url = https://github.com/spenceradolph/nextjs-site-one
+[submodule "nextjs-site-two"]
+	path = nextjs-site-two
+	url = https://github.com/spenceradolph/nextjs-site-two
