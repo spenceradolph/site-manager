@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "name": "Advertisement",
+      "path": "nextjs-site-one"
+    },
+    {
+      "name": "Dashboard",
+      "path": "nextjs-site-two"
+    },
+    {
+      "name": "SiteManager",
+      "path": "./"
+    }
+  ]
+}

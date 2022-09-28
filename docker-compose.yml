@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  proxymanager:
+    image: jc21/nginx-proxy-manager
+    container_name: proxy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "127.0.0.1:81:81"
+      - "443:443"
+    volumes:
+      - ./proxymanager_data:/data
+
+  advertisement:
+    container_name: advertisement
+    build:
+      context: ./nextjs-site-one
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
