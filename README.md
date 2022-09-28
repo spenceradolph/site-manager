@@ -4,4 +4,16 @@ Setups for sites!
 
 # Certbot instructions
 
-Run from an ubuntu vm with a volume somewhere to access the files after.
+WSL worked for me.
+https://www.robokiwi.com/wiki/security/lets-encrypt/wsl/
+
+Save the fullkey.pem and privkey.pem that get generated.
+
+# Proxy Manager
+
+http://localhost:81
+
+SSL Certificates
+Upload custom, select the certbot files.
+
+# 
