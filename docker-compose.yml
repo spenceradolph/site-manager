@@ -20,3 +20,12 @@ services:
     restart: unless-stopped
     ports:
       - "3001:3000"
+
+  dashboard:
+    container_name: dashboard
+    build:
+      context: ./nextjs-site-two
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "3002:3000"
